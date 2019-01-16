@@ -4,8 +4,10 @@ extends Node
 # var a = 2
 # var b = "textvar"
 
+
 func _ready():
 	$Player.connect("shoot",self,"_on_signal_shoot")
+	Input.set_mouse_mode(1)
 	pass
 
 #func _process(delta):
@@ -19,3 +21,6 @@ func _on_signal_shoot(Bullet,direction,location):
 	bullet.position = location
 	bullet.rotation = direction
 	bullet.start(Vector2(800,0),direction)
+	
+
+	

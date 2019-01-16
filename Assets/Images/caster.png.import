@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/manBrown_silencer.png-1f01233d1064ce602a9e0f40814bce65.stex"
+path="res://.import/caster.png-b1a49cb18026329105a08ade930d32bb.stex"
 
 [deps]
 
-source_file="res://Assets/Images/PNG/Man Brown/manBrown_silencer.png"
-dest_files=[ "res://.import/manBrown_silencer.png-1f01233d1064ce602a9e0f40814bce65.stex" ]
+source_file="res://Assets/Images/caster.png"
+dest_files=[ "res://.import/caster.png-b1a49cb18026329105a08ade930d32bb.stex" ]
 
 [params]
 

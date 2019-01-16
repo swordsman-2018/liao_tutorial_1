@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robot1_gun.png-6b3f748dcf4f91f56a327a2126454d91.stex"
+path="res://.import/bg.png-74afd7eaa5a44e706ab1c5830e005d51.stex"
 
 [deps]
 
-source_file="res://Assets/Images/PNG/Robot 1/robot1_gun.png"
-dest_files=[ "res://.import/robot1_gun.png-6b3f748dcf4f91f56a327a2126454d91.stex" ]
+source_file="res://Assets/Images/bg.png"
+dest_files=[ "res://.import/bg.png-74afd7eaa5a44e706ab1c5830e005d51.stex" ]
 
 [params]
 

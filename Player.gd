@@ -6,14 +6,28 @@ signal shoot(Bullet,direction,location)
 
 onready var _shootPosition = $Position2D
 
+var motion = Vector2()
+
 func _ready():
 	
 	pass
 
-func _process(delta):
-	# Called every frame. Delta is time since last frame.
-	# Update game logic here.
-	look_at(get_global_mouse_position())
+func _physics_process(delta):
+	
+	if Input.is_key_pressed(KEY_W):
+		motion.y = -50		
+	elif Input.is_key_pressed(KEY_S):
+		motion.y = 50
+	else:
+		motion.y = 0		
+	if Input.is_key_pressed(KEY_D):
+		motion.x = 50		
+	elif Input.is_key_pressed(KEY_A):
+		motion.x = -50		
+	else:
+		motion.x = 0
+	look_at(get_global_mouse_position())	
+	motion = move_and_slide(motion)
 	pass
 
 func _input(event):

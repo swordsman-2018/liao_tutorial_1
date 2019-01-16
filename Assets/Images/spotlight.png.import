@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robot1_stand.png-ed771031dcadc86b25e3e28b66368770.stex"
+path="res://.import/spotlight.png-7888499398973f73aa2022ba4f324978.stex"
 
 [deps]
 
-source_file="res://Assets/Images/PNG/Robot 1/robot1_stand.png"
-dest_files=[ "res://.import/robot1_stand.png-ed771031dcadc86b25e3e28b66368770.stex" ]
+source_file="res://Assets/Images/spotlight.png"
+dest_files=[ "res://.import/spotlight.png-7888499398973f73aa2022ba4f324978.stex" ]
 
 [params]
 

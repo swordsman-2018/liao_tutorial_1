@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/manOld_reload.png-1c7788326271dd79255d0b58b53c1983.stex"
+path="res://.import/light.png-a0f8dab26145d4fbf0e153bb9e316f5b.stex"
 
 [deps]
 
-source_file="res://Assets/Images/PNG/Man Old/manOld_reload.png"
-dest_files=[ "res://.import/manOld_reload.png-1c7788326271dd79255d0b58b53c1983.stex" ]
+source_file="res://Assets/Images/light.png"
+dest_files=[ "res://.import/light.png-a0f8dab26145d4fbf0e153bb9e316f5b.stex" ]
 
 [params]
 
