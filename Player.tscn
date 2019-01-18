@@ -1,16 +1,19 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Images/bg.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Images/PNG/Hitman 1/hitman1_gun.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Images/light.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/spotlight.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/FireFlash.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Images/FireLight.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 23.9778 )
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
@@ -42,13 +45,14 @@ position = Vector2( 19.3769, 10.0893 )
 
 [node name="Light2D" type="Light2D" parent="." index="4"]
 
-position = Vector2( 23.1218, 9.94148 )
+position = Vector2( 23.446, 10.0635 )
+scale = Vector2( 0.513053, 0.513053 )
 enabled = true
 editor_only = false
 texture = ExtResource( 4 )
 offset = Vector2( 0, 0 )
-texture_scale = 1.0
-color = Color( 0.875, 0.871796, 0.82373, 1 )
+texture_scale = 0.85
+color = Color( 0.945313, 0.932186, 0.897308, 1 )
 energy = 0.8
 mode = 0
 range_height = 0.0
@@ -65,5 +69,76 @@ shadow_filter = 3
 shadow_filter_smooth = 5.0
 shadow_item_cull_mask = 1
 _sections_unfolded = [ "Range", "Shadow", "Transform", "Z Index" ]
+
+[node name="Light2D2" type="Light2D" parent="." index="5"]
+
+position = Vector2( -9.76365, 0.0169544 )
+scale = Vector2( 0.0381085, 0.0381085 )
+enabled = true
+editor_only = false
+texture = ExtResource( 5 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.0
+color = Color( 1, 1, 1, 0.117647 )
+energy = 1.0
+mode = 2
+range_height = 0.0
+range_z_min = -50
+range_z_max = 50
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = false
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Range" ]
+
+[node name="FireFlash" type="Light2D" parent="." index="6"]
+
+visible = false
+position = Vector2( 27.1932, 9.80208 )
+scale = Vector2( 0.301301, 0.301301 )
+enabled = true
+editor_only = false
+texture = ExtResource( 6 )
+offset = Vector2( 0, 0 )
+texture_scale = 1.5
+color = Color( 0.976563, 0.964761, 0.94223, 1 )
+energy = 0.59
+mode = 0
+range_height = 0.0
+range_z_min = -1024
+range_z_max = 1024
+range_layer_min = 0
+range_layer_max = 0
+range_item_cull_mask = 1
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 0 )
+shadow_buffer_size = 2048
+shadow_gradient_length = 0.0
+shadow_filter = 0
+shadow_filter_smooth = 0.0
+shadow_item_cull_mask = 1
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Timer" type="Timer" parent="." index="7"]
+
+process_mode = 1
+wait_time = 0.1
+one_shot = false
+autostart = false
+
+[node name="FireLight" type="Sprite" parent="." index="8"]
+
+visible = false
+position = Vector2( 31.2713, 9.48232 )
+scale = Vector2( 0.365953, 0.365953 )
+texture = ExtResource( 7 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 
