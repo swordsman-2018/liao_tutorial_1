@@ -34,3 +34,17 @@ func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			emit_signal("shoot",Bullet,rotation,_shootPosition.global_position)
+			get_node("FireFlash").visible = true
+			get_node("FireLight").visible = true
+			get_node("Timer").start()
+			
+			
+
+
+
+
+func _on_Timer_timeout():
+	get_node("FireFlash").visible = !get_node("FireFlash").visible
+	get_node("FireLight").visible = !get_node("FireLight").visible
+	get_node("Timer").stop()
+	pass # replace with function body

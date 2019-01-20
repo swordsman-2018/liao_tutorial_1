@@ -32,15 +32,20 @@ color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
 
 [node name="Light2D" type="Light2D" parent="." index="3"]
 
+<<<<<<< HEAD
 visible = false
 position = Vector2( 740, 220 )
 scale = Vector2( 0.871765, 0.871765 )
+=======
+position = Vector2( 890, 40 )
+scale = Vector2( 1.88786, 0.871765 )
+>>>>>>> 19bda1cc045c676150c3aa517f47fb87dd5972e8
 enabled = true
 editor_only = false
 texture = ExtResource( 4 )
 offset = Vector2( 0, 0 )
 texture_scale = 1.0
-color = Color( 0.333641, 0.325439, 0.335938, 1 )
+color = Color( 0.178459, 0.174072, 0.179688, 1 )
 energy = 1.0
 mode = 0
 range_height = 0.0
@@ -60,6 +65,7 @@ _sections_unfolded = [ "Shadow" ]
 
 [node name="Wall" type="Sprite" parent="." index="4"]
 
+editor/display_folded = true
 position = Vector2( 390, 190 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
@@ -74,6 +80,7 @@ light_mask = 1
 
 [node name="Wall2" type="Sprite" parent="." index="5"]
 
+editor/display_folded = true
 position = Vector2( 460, 240 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
@@ -88,6 +95,7 @@ light_mask = 1
 
 [node name="Wall3" type="Sprite" parent="." index="6"]
 
+editor/display_folded = true
 position = Vector2( 310, 380 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
@@ -102,6 +110,7 @@ light_mask = 1
 
 [node name="Wall4" type="Sprite" parent="." index="7"]
 
+editor/display_folded = true
 position = Vector2( 160, 260 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
@@ -116,6 +125,7 @@ light_mask = 1
 
 [node name="Wall5" type="Sprite" parent="." index="8"]
 
+editor/display_folded = true
 position = Vector2( 180, 110 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
@@ -130,6 +140,7 @@ light_mask = 1
 
 [node name="Wall6" type="Sprite" parent="." index="9"]
 
+editor/display_folded = true
 position = Vector2( 350, 100 )
 scale = Vector2( 1.25, 1.25 )
 texture = ExtResource( 5 )
