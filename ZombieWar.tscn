@@ -12,7 +12,7 @@ closed = true
 cull_mode = 0
 polygon = PoolVector2Array( 16, -16, -16, -16, -16, 16, 16, 16 )
 
-[node name="ZombieWar" type="Node"]
+[node name="ZombieWar" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
@@ -28,10 +28,11 @@ position = Vector2( 308.277, 213.85 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." index="2"]
 
-color = Color( 0, 0, 0, 1 )
+color = Color( 0.0196078, 0.0196078, 0.0196078, 1 )
 
 [node name="Light2D" type="Light2D" parent="." index="3"]
 
+visible = false
 position = Vector2( 740, 220 )
 scale = Vector2( 0.871765, 0.871765 )
 enabled = true
